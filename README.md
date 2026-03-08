@@ -1,11 +1,11 @@
 # mach_fox_ring_buffer
-generic audio blast processing coprocessor
+generic signal blast processing coprocessor
 
 
 
 Mach-Ring Double Combinator Sonic-Streaming Producer-Pointer
 ==================================================================
-Or, a simple quick and dirty circular buffer implementation for audio processing
+Or, a simple quick and dirty circular buffer implementation for signal (vector, audio, video) processing
 
 A simple C implementation for a circular (ring) buffer. Thread-safe with a single producer and a single consumer, using OSAtomic.h primitives, and avoids any need for buffer wrapping logic by using a virtual memory map technique to place a virtual copy of the buffer straight after the end of the real buffer
 
